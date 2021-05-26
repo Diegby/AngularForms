@@ -1,0 +1,26 @@
+<div class="header">
+    <kendo-stepper
+        #stepper
+        [steps]="pasos"
+        stepType="full"
+        [(currentStep)]="pasoActual"
+        [style.width.px]="950"
+        >
+    </kendo-stepper>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>Ayuda</h2>
+    </div>
+
+    <div class="main">
+        <um-form-datos-personales></um-form-datos-personales>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+

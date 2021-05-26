@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+  
+  /* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.example {
+    display: flex;
+    margin: auto;
+    width: 450px;
+}
+
+.k-stepper {
+    align-self: center;
+}
+
+.k-button.prev {
+    margin-right: 16px;
+}
+
+.k-form-separator {
+    margin-top: 40px;
+}
+
+.k-buttons-end {
+    justify-content: space-between;
+    align-content: center;
+}
+
+.page {
+    align-self: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center ;
+    padding: 60px;
+    background: #d9f1fd;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 100vh;
+}
+  
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.espacio-bajo {
+    margin-bottom: 10%;
+}

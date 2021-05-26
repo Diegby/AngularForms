@@ -1,0 +1,92 @@
+<form 
+    [formGroup]="form" 
+    (ngSubmit)="onSubmit()" 
+    class="flex-container">
+    
+    <div style="flex-grow: 1">
+        <div class="espacio-bajo">
+            <kendo-formfield>
+                <kendo-label 
+                    text="Nombre">
+                </kendo-label>
+                <input 
+                    formControlName="nombre" 
+                    kendoTextBox 
+                    #nombre/>
+    
+                <kendo-formerror>Error: El nombre es requerido</kendo-formerror>
+            </kendo-formfield>
+        </div>
+        
+        <div class="espacio-bajo">
+            <kendo-formfield>
+                <kendo-label text="Fecha Nacimiento"></kendo-label>
+                <kendo-datepicker
+                formControlName="fechaNacimiento"
+                #fechaNacimiento
+                ></kendo-datepicker>
+
+                <kendo-formerror>Error: Arrival date is required</kendo-formerror>
+            </kendo-formfield>
+        </div>
+       
+    </div>
+
+    <div style="flex-grow: 1">
+        <div class="espacio-bajo">
+            <kendo-formfield>
+                <kendo-label 
+                    text="Primer apellido">
+                </kendo-label>
+                <input 
+                    formControlName="primerApellido" 
+                    kendoTextBox 
+                    #primerApellido/>
+        
+                <kendo-formerror>Error: El Primer apellido es requerido</kendo-formerror>
+            </kendo-formfield>
+        </div>
+        
+        <div class="espacio-bajo">
+            <kendo-formfield showHints="initial" showErrors="initial">
+                <kendo-label [for]="nSeguridadSocial" text="Nº Seguridad Social"></kendo-label>
+                <kendo-numerictextbox
+                  #nSeguridadSocial
+                  formControlName="nSeguridadSocial"
+                  [min]="0"
+                ></kendo-numerictextbox>
+                <kendo-formerror>Error: Nº Seguridad Social es requerido</kendo-formerror>
+              </kendo-formfield>
+        </div>
+    </div>
+
+    <div style="flex-grow: 1">
+        <div class="espacio-bajo">
+            <kendo-formfield>
+                <kendo-label 
+                    text="Segundo apellido">
+                </kendo-label>
+                <input 
+                    formControlName="segundoApellido" 
+                    kendoTextBox 
+                    #segundoApellido/>
+    
+            </kendo-formfield>
+        </div>
+        
+        <div class="espacio-bajo">
+            <kendo-formfield>
+                <kendo-label 
+                    [for]="dniNieTie"
+                    text="DNI/NIE/TIE">
+                </kendo-label>
+                <input 
+                    formControlName="dniNieTie" 
+                    kendoTextBox 
+                    #dniNieTie/>
+        
+                <kendo-formerror>Error: El DNI/NIE/TIE es requerido</kendo-formerror>
+            </kendo-formfield>
+        </div>
+    </div>
+</form>
